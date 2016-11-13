@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class firstclass {
+	public static void main(String[] args)
+	{
+		Scanner sc= new Scanner(System.in);
+		secondclass object = new secondclass("KTL");
+		object.output();
+		secondclass object2 = new secondclass("NAU");
+		object2.output();
+	}
+
+}
+
+
+--------------------------------------------------
+
+
+public class secondclass {
+	private String schoolname;
+	public secondclass (String name)
+	{
+		schoolname=name;
+	}
+	
+	
+	
+	public void output()
+	{
+		System.out.println("The name of your school is "+schoolname);
+	}
+}
